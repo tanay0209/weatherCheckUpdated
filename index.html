@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Checker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather in your City !!</h1>
+        <div class="searchArea">
+            <input id="userCity" placeholder="Search your City"
+            type="text">
+            <button type="submit" onclick="searchCity()"
+            id="searchCity">Search</button>
+            <button type="submit" onclick="getCurrentCity()" id="currentCity">Current City</button>
+        </div>
+        <div class="errorMessage"></div>
+        <div class="dataDisplay">
+            <p>City Name: <span id="cityName">--</span></p>
+            <p>Temperature: <span id="temperature">--</span></p>
+            <p>Max Temperature: <span id="maxTemperature">--</span></p>
+            <p>Min Temperature: <span id="minTemperature">--</span></p>
+            <p>Weather: <span id="weather">--</span></p>
+        </div>
+    </div>
+</body>
+</html>
